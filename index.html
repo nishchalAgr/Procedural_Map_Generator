@@ -1,0 +1,55 @@
+<html>
+  <div id="container">
+    <div id="canvasDiv" style="height: 100%; width: 75%">
+      <canvas id="grid"></canvas>
+    </div>
+    <div id="UI">
+      <div class="slider">
+        Persistance:
+        <input id="persistance" type="range" min="1" max="500" value="200" />
+      </div>
+      <div class="slider">
+        Roughness:
+        <input id="roughness" type="range" min="1" max="500" value="50" />
+      </div>
+      <div class="slider">
+        Zoom out:
+        <input id="zoom" type="range" min="1" max="30" value="2" />
+      </div>
+      <div class="slider">
+        Octaves:
+        <input id="octaves" type="range" min="1" max="7" value="7" />
+      </div>
+      <div class="slider">
+        Simplex Weight:
+        <input id="simplexProp" type="range" min="1" max="99" value="50" />
+      </div>
+      <div id="colorPicker"></div>
+      <button onclick="addColorPicker()">Add custom color</button>
+      <button id="run" onclick="start()">Update Settings</button>
+      <button id="run" onclick="startRandom()">New Seed</button>
+      <form>
+        <input type="checkbox" id="custom_color_checkbox" />
+        <label> Use custom colors </label>
+      </form>
+      <div id="loadingStatus"></div>
+    </div>
+  </div>
+  <script src="perlin.js"></script>
+  <script src="material.js"></script>
+  <script src="index.js"></script>
+  <style>
+    #container {
+      display: flex;
+      flex-direction: row;
+    }
+    #UI {
+      display: flex;
+      flex-direction: column;
+    }
+    .slider {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</html>
