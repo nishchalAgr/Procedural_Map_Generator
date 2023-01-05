@@ -13,11 +13,17 @@ Everything was developed in simple JavaScript and HTML, just open the HTML file 
 #### How to use
 
 The user can adjust the following parameters and settings:
+
 **Roughness**: Adjusts transparency of octaves.
+
 **Persistance**: Adjusts how quickly amplitude decreases between octaves.
+
 **Octaves**: Adjusts number of octaves in calculating height map. More octaves requires more computing time but also results in more detail.
+
 **Simplex Weight**: Adjusts how much impact simplex noise has on height map calculations. Inversely proportional to perlin noise weight.
+
 **Zoom out**: Sliding to the right will adjust the scale so that more of the map is shown.
+
 **Color**: Can use default colors or add custom color palettes. Colors that are lower on the list (added more recently) will correspond to larger values on the height map.
 
 ---
